@@ -45,7 +45,6 @@ const AppProvider = ({ children }) => {
   }, []);
   useEffect(() => {
     dispatch({ type: 'GET_TOTALS' });
-    dispatch({ type: 'Random' });
   }, [state.cart]);
   return (
     <AppContext.Provider
